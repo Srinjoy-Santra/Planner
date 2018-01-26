@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Task"
+        android:textColor="#FF2A70DB"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/editTextReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Set Date and Reminder (XX:XX AM/PM)"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:onClick="dateclicked"
+        />
+
+    <EditText
+        android:id="@+id/editTextSubtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Add a subtask"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="15sp"
+        android:inputType="textPersonName"
+        android:hint="Add a note" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="addDetails"/>
+
+    <Button
+        android:id="@+id/deleteopt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:onClick="deleteButtonClicked"/>
+
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/skyscraper"
+    android:padding="17dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/mainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#2a70db">
+    <TextView
+        android:id="@+id/mainInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inbox"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-smallcaps"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="180dp"
+        android:textColor="#ffffff"/>
+
+    <ImageButton
+        android:id="@+id/mainArrange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:srcCompat="@android:drawable/list_selector_background"
+
+         />
+
+    <ImageButton
+        android:id="@+id/mainOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:srcCompat="@android:drawable/list_selector_background"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mainNewTask"
+        android:layout_below="@+id/mainHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#2a70db"
+        >
+
+        <EditText
+            android:id="@+id/mainNewTodo"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:hint="Add a to-do..."
+            android:textColor="#ffffff"
+
+            />
+
+        <ImageButton
+            android:id="@+id/mainStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:padding="20dp"
+            app:srcCompat="@android:drawable/list_selector_background"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Mainsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainNewTask"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Add"
+        android:onClick="addButtonClicked"/>
+
+
+
+    <ListView
+        android:id="@+id/todoListView"
+        android:layout_below="@id/Mainsubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
